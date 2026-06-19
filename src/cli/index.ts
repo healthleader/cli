@@ -53,6 +53,13 @@ async function run(argv: string[]): Promise<number> {
   const parsed = parseArgs(argv);
   const first = parsed.positionals[0];
 
+  // `healthleader mcp` boots the stdio MCP server (self-connects on import)
+  // and stays alive on the transport — never resolve so we don't process.exit.
+  if (first === "mcp") {
+    await import("../mcp/server.js");
+    return new Promise<number>(() => {});
+  }
+
   if (parsed.flags.has("version") || first === "version") {
     process.stdout.write(PKG_VERSION + "\n");
     return EXIT.OK;

@@ -32,8 +32,7 @@
     "node": ">=20"
   },
   "bin": {
-    "healthleader": "dist/cli/index.js",
-    "healthleader-mcp": "dist/mcp/server.js"
+    "healthleader": "dist/cli/index.js"
   },
   "files": [
     "dist",
