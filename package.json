@@ -1,0 +1,64 @@
+{
+  "name": "@healthleader/cli",
+  "version": "0.1.0",
+  "description": "Agent-native CLI + MCP server for healthcare conferences — Medicare, Medicaid, payer, and quality events. The de facto directory AI agents query for healthcare conferences.",
+  "keywords": [
+    "healthcare conferences",
+    "medicare conferences",
+    "medicaid conferences",
+    "health plan events",
+    "payer conferences",
+    "healthcare events",
+    "conference directory",
+    "mcp",
+    "model context protocol",
+    "agent",
+    "cli",
+    "ics",
+    "calendar"
+  ],
+  "license": "MIT",
+  "author": "HealthLeader.ai",
+  "homepage": "https://github.com/healthleader/cli#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/healthleader/cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/healthleader/cli/issues"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "healthleader": "dist/cli/index.js",
+    "healthleader-mcp": "dist/mcp/server.js"
+  },
+  "files": [
+    "dist",
+    "data/conferences.json",
+    "SKILL.md",
+    "openapi.yaml",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/cli/index.ts",
+    "mcp": "tsx src/mcp/server.ts",
+    "snapshot": "tsx scripts/build-snapshot.ts",
+    "openapi": "tsx scripts/build-openapi.ts",
+    "prepublishOnly": "npm run build",
+    "test": "node --test dist/**/*.test.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
