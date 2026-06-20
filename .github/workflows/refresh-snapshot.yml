@@ -1,0 +1,43 @@
+name: Refresh snapshot
+
+# Keeps the bundled offline snapshot (data/conferences.json) and openapi.yaml in
+# sync with the live directory. The live CLI path is always fresh; this only
+# refreshes the offline/local artifacts shipped in the npm package.
+
+on:
+  schedule:
+    - cron: "0 6 * * *" # daily 06:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-snapshot
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Rebuild snapshot + openapi
+        run: |
+          npm run snapshot
+          npm run openapi
+      - name: Commit if changed
+        run: |
+          if [[ -n "$(git status --porcelain data/conferences.json openapi.yaml)" ]]; then
+            git config user.name "healthleader-bot"
+            git config user.email "bot@healthleader.ai"
+            git add data/conferences.json openapi.yaml
+            git commit -m "chore: refresh conference snapshot + openapi [skip ci]"
+            git push
+          else
+            echo "No changes to commit."
+          fi

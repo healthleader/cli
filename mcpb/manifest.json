@@ -1,0 +1,37 @@
+{
+  "manifest_version": "0.3",
+  "name": "healthleader",
+  "display_name": "HealthLeader Conferences",
+  "version": "0.1.0",
+  "description": "Read-only directory of healthcare conferences (Medicare, Medicaid, payer, quality). List, search, locate, and export conferences to calendar.",
+  "author": {
+    "name": "HealthLeader.ai",
+    "url": "https://github.com/healthleader/cli"
+  },
+  "homepage": "https://github.com/healthleader/cli",
+  "license": "MIT",
+  "keywords": ["healthcare", "conferences", "medicare", "medicaid", "health plan", "events"],
+  "server": {
+    "type": "node",
+    "entry_point": "dist/mcp/server.js",
+    "mcp_config": {
+      "command": "node",
+      "args": ["${__dirname}/dist/mcp/server.js"],
+      "env": {}
+    }
+  },
+  "tools": [
+    { "name": "list_conferences", "description": "List conferences with filters (focus, state, dates, virtual, ceu, upcoming)." },
+    { "name": "get_conference", "description": "Get one conference by slug (full public record)." },
+    { "name": "search_conferences", "description": "Relevance search over name, host, description, themes." },
+    { "name": "conferences_near", "description": "Conferences in or near a city." },
+    { "name": "conference_ics", "description": "iCalendar (.ics) export for a conference." },
+    { "name": "directory_stats", "description": "Aggregate counts by focus, state, type, or month." }
+  ],
+  "tools_generated": false,
+  "compatibility": {
+    "claude_desktop": ">=0.10.0",
+    "platforms": ["darwin", "linux", "win32"],
+    "runtimes": { "node": ">=20" }
+  }
+}

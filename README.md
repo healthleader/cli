@@ -77,8 +77,9 @@ The package ships a snapshot of the directory. `--data-source local` reads it wi
 
 ## Privacy
 
-Anonymous usage stats (which filters are used, what returns zero results) help us fill gaps in the
-directory. No personal data; a random per-install id only. Opt out with `--no-telemetry`,
+Anonymous usage stats help us fill gaps in the directory: which filters/tools are used, and
+**search terms that return zero results** (so we know what to add). Successful search text is
+*not* logged. No personal data; a random per-install id only. Opt out with `--no-telemetry`,
 `DO_NOT_TRACK=1`, or `HEALTHLEADER_TELEMETRY=0`.
 
 ## Data

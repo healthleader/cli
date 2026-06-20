@@ -1,0 +1,47 @@
+name: Release
+
+# On a version tag: publish to npm and attach an .mcpb bundle to the GitHub
+# Release. Requires the NPM_TOKEN repo secret (npm automation token).
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write # create release / upload assets
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          registry-url: "https://registry.npmjs.org"
+      - run: npm ci
+      - name: Build + fresh snapshot
+        run: |
+          npm run build
+          npm run snapshot
+      - name: Publish to npm
+        run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Build .mcpb bundle
+        run: |
+          set -euo pipefail
+          rm -rf bundle && mkdir -p bundle
+          cp -r dist bundle/dist
+          cp -r data bundle/data
+          cp mcpb/manifest.json bundle/manifest.json
+          cp package.json package-lock.json bundle/
+          (cd bundle && npm ci --omit=dev --ignore-scripts && rm -f package-lock.json)
+          (cd bundle && zip -qr ../healthleader.mcpb .)
+          echo "built healthleader.mcpb"
+      - name: Attach .mcpb to release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: healthleader.mcpb

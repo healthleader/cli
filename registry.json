@@ -1,0 +1,46 @@
+{
+  "name": "healthleader",
+  "category": "healthcare",
+  "api": "HealthLeader.ai Conference Directory",
+  "description": "Agent-native, read-only directory of healthcare conferences (Medicare, Medicaid, payer, quality, digital health). Printing-Press-conformant CLI + MCP server.",
+  "package": "@healthleader/cli",
+  "bin": "healthleader",
+  "repository": "https://github.com/healthleader/cli",
+  "license": "MIT",
+  "auth_type": "none",
+  "printing_press_conformant": true,
+  "search_terms": [
+    "healthcare conferences",
+    "medicare conferences",
+    "medicaid conferences",
+    "health plan events",
+    "payer conferences",
+    "quality conferences",
+    "digital health events",
+    "CEU CME healthcare",
+    "conference directory"
+  ],
+  "install": {
+    "npx": "npx -y @healthleader/cli conferences list --agent",
+    "npm": "npm install -g @healthleader/cli",
+    "mcp": "claude mcp add healthleader -- npx -y @healthleader/cli mcp"
+  },
+  "agent_context": "npx -y @healthleader/cli agent-context",
+  "mcp": {
+    "command": "npx",
+    "args": ["-y", "@healthleader/cli", "mcp"],
+    "transports": ["stdio"],
+    "tool_count": 6,
+    "tools": [
+      "list_conferences",
+      "get_conference",
+      "search_conferences",
+      "conferences_near",
+      "conference_ics",
+      "directory_stats"
+    ],
+    "auth_type": "none",
+    "read_only": true,
+    "mcp_ready": "full"
+  }
+}

@@ -110,7 +110,10 @@ server.registerTool(
   async (a) => {
     const { source, synced_at, rows } = await resolveSource(MODE, nowIso());
     const hits = search(rows, a.query, a.limit);
-    capture(telemetry, "mcp_tool_call", { tool: "search_conferences", query: a.query, result_count: hits.length });
+    capture(telemetry, "mcp_tool_call", { tool: "search_conferences", result_count: hits.length });
+    // Capture the query text only when it returns nothing — gap-loop signal.
+    if (hits.length === 0)
+      capture(telemetry, "cli_zero_result", { command: "search_conferences", query: a.query, surface: "mcp" });
     return jsonContent(envelope(hits, { source, synced_at, data_source: MODE }));
   },
 );

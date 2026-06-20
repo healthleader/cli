@@ -3,7 +3,8 @@ import { filterList, getBySlug, search, near, stats, todayIsoDate, type StatBy }
 import { buildIcs } from "../../core/ics.js";
 import { envelope, type DataSourceMode } from "../../core/envelope.js";
 import { CliError, EXIT } from "../../core/errors.js";
-import { renderEnvelope, deliver, type OutputOpts } from "../render.js";
+import { renderEnvelope, deliver, contentTypeFor, type OutputOpts } from "../render.js";
+import { PUBLIC_FIELDS } from "../../core/fields.js";
 import { capture } from "../../core/analytics.js";
 import { str, num, bool, type ParsedArgs } from "../args.js";
 
@@ -24,7 +25,7 @@ async function emit<T extends Record<string, unknown>>(
 ): Promise<number> {
   const env = envelope(results, { ...meta, data_source: ctx.dataSource });
   const text = renderEnvelope(env, ctx.output);
-  await deliver(text, ctx.output.deliver);
+  await deliver(text, ctx.output.deliver, contentTypeFor(ctx.output));
   capture(ctx.telemetry, "cli_command", {
     command,
     surface: "cli",
@@ -47,6 +48,10 @@ function filterKeys(p: ParsedArgs): string[] {
 export async function cmdList(ctx: Ctx): Promise<number> {
   const { source, synced_at, rows } = await resolveSource(ctx.dataSource, nowIso());
   const today = todayIsoDate(nowIso());
+  const sort = str(ctx.args, "sort");
+  if (sort && !(PUBLIC_FIELDS as readonly string[]).includes(sort)) {
+    throw new CliError(`--sort: "${sort}" is not a sortable field`, EXIT.USAGE);
+  }
   const filtered = filterList(rows, {
     focus: str(ctx.args, "focus"),
     state: str(ctx.args, "state"),
@@ -81,10 +86,12 @@ export async function cmdSearch(ctx: Ctx): Promise<number> {
   if (!query) throw new CliError('usage: conferences search "<query>"', EXIT.USAGE);
   const { source, synced_at, rows } = await resolveSource(ctx.dataSource, nowIso());
   const hits = search(rows, query, num(ctx.args, "limit"));
-  capture(ctx.telemetry, "cli_command", { command: "conferences search", query, result_count: hits.length, surface: "cli" });
+  // Don't log the raw query on success (healthcare-sensitive). Capture the
+  // query text ONLY when it returns nothing — that miss is the gap-loop signal.
+  capture(ctx.telemetry, "cli_command", { command: "conferences search", result_count: hits.length, surface: "cli" });
   if (hits.length === 0) capture(ctx.telemetry, "cli_zero_result", { command: "conferences search", query });
   const env = envelope(hits, { source, synced_at, data_source: ctx.dataSource });
-  await deliver(renderEnvelope(env, ctx.output), ctx.output.deliver);
+  await deliver(renderEnvelope(env, ctx.output), ctx.output.deliver, contentTypeFor(ctx.output));
   return EXIT.OK;
 }
 
@@ -109,7 +116,7 @@ export async function cmdStats(ctx: Ctx): Promise<number> {
   const { source, synced_at, rows } = await resolveSource(ctx.dataSource, nowIso());
   const agg = stats(rows, by);
   const env = envelope(agg, { source, synced_at, data_source: ctx.dataSource });
-  await deliver(renderEnvelope(env as never, ctx.output), ctx.output.deliver);
+  await deliver(renderEnvelope(env as never, ctx.output), ctx.output.deliver, contentTypeFor(ctx.output));
   capture(ctx.telemetry, "cli_command", { command: "conferences stats", by, surface: "cli" });
   return EXIT.OK;
 }
@@ -130,6 +137,6 @@ export async function cmdIcs(ctx: Ctx): Promise<number> {
     capture(ctx.telemetry, "conference_viewed", { slug, surface: "cli", via: "ics" });
   }
   const ics = buildIcs(subset, synced_at);
-  await deliver(ics, ctx.output.deliver);
+  await deliver(ics, ctx.output.deliver, "text/calendar");
   return EXIT.OK;
 }

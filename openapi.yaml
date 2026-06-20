@@ -1,0 +1,148 @@
+openapi: 3.1.0
+info:
+  title: HealthLeader.ai Conference Directory (public read API)
+  version: "0.1.0"
+  description: >-
+    Public, read-only directory of healthcare conferences (Medicare, Medicaid,
+    payer, quality). Served via Supabase PostgREST. Only published (status=live)
+    rows and the public fields below are exposed. No write operations.
+  license:
+    name: MIT
+servers:
+  - url: https://vjwlrowighjvvnmpjdvr.supabase.co/rest/v1
+security:
+  - apikey: []
+paths:
+  /conferences:
+    get:
+      operationId: listConferences
+      summary: List live healthcare conferences
+      description: >-
+        Always send select=slug,name,host_org,host_org_abbrev,start_date,end_date,dates_display,location_city,location_state,location_venue,is_virtual,is_hybrid,nearest_airport,focus_area,focus_themes,conference_type,short_description,long_description,website_url,registration_url,attendance_pricing,early_bird_deadline,is_member_only,ceu_offered,ceu_info,keynote_speakers,expected_attendees and status=eq.live. Filter with PostgREST
+        operators, e.g. focus_area=ilike.*Medicare*, location_state=eq.TX,
+        start_date=gte.2026-01-01, order=start_date.asc, limit=20.
+      parameters:
+        - name: select
+          in: query
+          required: true
+          schema: { type: string, default: "slug,name,host_org,host_org_abbrev,start_date,end_date,dates_display,location_city,location_state,location_venue,is_virtual,is_hybrid,nearest_airport,focus_area,focus_themes,conference_type,short_description,long_description,website_url,registration_url,attendance_pricing,early_bird_deadline,is_member_only,ceu_offered,ceu_info,keynote_speakers,expected_attendees" }
+        - name: status
+          in: query
+          required: true
+          schema: { type: string, default: "eq.live", enum: ["eq.live"] }
+        - name: order
+          in: query
+          schema: { type: string, example: "start_date.asc" }
+        - name: limit
+          in: query
+          schema: { type: integer }
+        - name: offset
+          in: query
+          schema: { type: integer }
+      responses:
+        "200":
+          description: Array of conference records
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Conference"
+components:
+  securitySchemes:
+    apikey:
+      type: apiKey
+      in: header
+      name: apikey
+      description: Public Supabase anon key (read-only, RLS-gated to status=live).
+  schemas:
+    Conference:
+      type: object
+      properties:
+        slug:
+          type: string
+          nullable: true
+        name:
+          type: string
+          nullable: true
+        host_org:
+          type: string
+          nullable: true
+        host_org_abbrev:
+          type: string
+          nullable: true
+        start_date:
+          type: string
+          nullable: true
+          format: date
+        end_date:
+          type: string
+          nullable: true
+          format: date
+        dates_display:
+          type: string
+          nullable: true
+        location_city:
+          type: string
+          nullable: true
+        location_state:
+          type: string
+          nullable: true
+        location_venue:
+          type: string
+          nullable: true
+        is_virtual:
+          type: boolean
+          nullable: true
+        is_hybrid:
+          type: boolean
+          nullable: true
+        nearest_airport:
+          type: string
+          nullable: true
+        focus_area:
+          type: string
+          nullable: true
+        focus_themes:
+          type: array
+          nullable: true
+          items:
+            type: string
+        conference_type:
+          type: string
+          nullable: true
+        short_description:
+          type: string
+          nullable: true
+        long_description:
+          type: string
+          nullable: true
+        website_url:
+          type: string
+          nullable: true
+        registration_url:
+          type: string
+          nullable: true
+        attendance_pricing:
+          type: object
+          nullable: true
+        early_bird_deadline:
+          type: string
+          nullable: true
+        is_member_only:
+          type: boolean
+          nullable: true
+        ceu_offered:
+          type: boolean
+          nullable: true
+        ceu_info:
+          type: object
+          nullable: true
+        keynote_speakers:
+          type: array
+          nullable: true
+          items:
+            type: string
+        expected_attendees:
+          type: string
+          nullable: true

@@ -65,7 +65,8 @@ npx -y @healthleader/cli which "behavioral health conferences in texas"
 
 Every command returns `{ meta: { source, synced_at, count, version, data_source }, results: [...] }`.
 Read `.results` for data; `.meta.source` is `live` or `local`. Project fields with
-`--select slug,name,start_date`. Exit codes: `0` ok, `2` usage, `3` not found, `5` api error.
+`--select slug,name,start_date`. Exit codes: `0` ok, `2` usage (incl. `which` no-match),
+`3` not found, `4` auth, `5` api error, `7` rate-limited, `10` config.
 
 ## Notes
 - All commands are read-only. There are no write operations.

@@ -1,6 +1,7 @@
 import type { OutputOpts } from "./render.js";
 import type { DataSourceMode } from "../core/envelope.js";
 import { CliError, EXIT } from "../core/errors.js";
+import { assertSelectable } from "../core/fields.js";
 
 /** Flags that consume the next token as a value (everything else is boolean). */
 const VALUE_FLAGS = new Set([
@@ -99,6 +100,13 @@ export function resolveGlobals(p: ParsedArgs): {
     ?.split(",")
     .map((s) => s.trim())
     .filter(Boolean);
+  if (select && select.length > 0) {
+    try {
+      assertSelectable(select);
+    } catch (e) {
+      throw new CliError((e as Error).message, EXIT.USAGE);
+    }
+  }
 
   const noColor = p.flags.get("color") === false || process.env.NO_COLOR != null;
   const telemetry =
