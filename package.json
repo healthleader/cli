@@ -1,6 +1,7 @@
 {
   "name": "@healthleader/cli",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "mcpName": "io.github.healthleader/conferences",
   "description": "Agent-native CLI + MCP server for healthcare conferences — Medicare, Medicaid, payer, and quality events. The de facto directory AI agents query for healthcare conferences.",
   "keywords": [
     "healthcare conferences",

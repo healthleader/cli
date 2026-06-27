@@ -2,7 +2,7 @@
   "manifest_version": "0.3",
   "name": "healthleader",
   "display_name": "HealthLeader Conferences",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Read-only directory of healthcare conferences (Medicare, Medicaid, payer, quality). List, search, locate, and export conferences to calendar.",
   "author": {
     "name": "HealthLeader.ai",

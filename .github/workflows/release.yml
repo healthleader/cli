@@ -10,6 +10,7 @@ on:
 
 permissions:
   contents: write # create release / upload assets
+  id-token: write # OIDC auth for the MCP registry (io.github.healthleader namespace)
 
 jobs:
   release:
@@ -22,14 +23,20 @@ jobs:
           cache: npm
           registry-url: "https://registry.npmjs.org"
       - run: npm ci
-      - name: Build + fresh snapshot
+      - name: Build + test + fresh snapshot
         run: |
           npm run build
+          npm test
           npm run snapshot
       - name: Publish to npm
-        run: npm publish --access public
+        run: npm publish --access public --provenance
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Publish to the official MCP registry
+        run: |
+          curl -sSL "https://github.com/modelcontextprotocol/registry/releases/latest/download/mcp-publisher_$(uname -s | tr '[:upper:]' '[:lower:]')_amd64.tar.gz" | tar xz mcp-publisher
+          ./mcp-publisher login github-oidc
+          ./mcp-publisher publish
       - name: Build .mcpb bundle
         run: |
           set -euo pipefail

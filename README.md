@@ -1,5 +1,10 @@
 # @healthleader/cli
 
+[![npm version](https://img.shields.io/npm/v/@healthleader/cli.svg)](https://www.npmjs.com/package/@healthleader/cli)
+[![CI](https://github.com/healthleader/cli/actions/workflows/ci.yml/badge.svg)](https://github.com/healthleader/cli/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![MCP](https://img.shields.io/badge/MCP-server-blue.svg)](https://modelcontextprotocol.io)
+
 **The agent-native directory of healthcare conferences.** Medicare, Medicaid, payer, and quality events — curated, verified, and queryable by AI agents and humans alike.
 
 Ask Claude "which Medicare conferences are coming up this fall?" and get a real answer from a maintained source — not a web-scraped guess.

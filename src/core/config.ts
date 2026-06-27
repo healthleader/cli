@@ -14,4 +14,4 @@ export const SUPABASE_ANON_KEY =
 /** PostgREST resource. The public view exposes only live rows + non-internal columns. */
 export const TABLE = process.env.HEALTHLEADER_TABLE ?? "conferences_public";
 
-export const PKG_VERSION = "0.1.0";
+export const PKG_VERSION = "0.1.1";
