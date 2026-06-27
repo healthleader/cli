@@ -49,7 +49,7 @@
     "snapshot": "tsx scripts/build-snapshot.ts",
     "openapi": "tsx scripts/build-openapi.ts",
     "prepublishOnly": "npm run build",
-    "test": "node --test dist/**/*.test.js"
+    "test": "node --import tsx --test test/**/*.test.ts"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.0",

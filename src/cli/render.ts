@@ -99,7 +99,7 @@ export function contentTypeFor(opts: OutputOpts): string {
 }
 
 /** Confine `--deliver file:` writes to the current working directory tree. */
-function safeFilePath(p: string): string {
+export function safeFilePath(p: string): string {
   const abs = resolve(process.cwd(), p);
   const rel = relative(process.cwd(), abs);
   if (rel === "" || rel === ".." || rel.startsWith(".." + "/") || rel.startsWith(".." + "\\")) {
@@ -112,7 +112,7 @@ function safeFilePath(p: string): string {
 }
 
 /** Block `--deliver webhook:` SSRF to loopback/private/metadata hosts; require https. */
-function safeWebhookUrl(u: string): URL {
+export function safeWebhookUrl(u: string): URL {
   let url: URL;
   try {
     url = new URL(u);
