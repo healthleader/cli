@@ -7,7 +7,7 @@ import { writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { PUBLIC_FIELDS } from "../src/core/fields.js";
-import { SUPABASE_URL, PKG_VERSION } from "../src/core/config.js";
+import { SUPABASE_URL, PKG_VERSION, TABLE } from "../src/core/config.js";
 
 type Prop = { type: string; format?: string; items?: { type: string } };
 
@@ -50,7 +50,7 @@ servers:
 security:
   - apikey: []
 paths:
-  /conferences:
+  /${TABLE}:
     get:
       operationId: listConferences
       summary: List live healthcare conferences
