@@ -10,6 +10,19 @@ import { fetchLive } from "../src/core/client.js";
 
 async function main(): Promise<void> {
   const rows = await fetchLive({ order: "start_date.asc" });
+
+  // Safety floor: never overwrite the shipped snapshot with a degraded pull
+  // (a transient API error or a mis-ordered DB change could return few/zero
+  // rows; under upcoming-default an all-past snapshot renders empty).
+  if (rows.length < 100) {
+    throw new Error(`snapshot aborted: only ${rows.length} rows returned (expected ~149)`);
+  }
+  const today = new Date().toISOString().slice(0, 10);
+  const upcoming = rows.filter((r) => (r.end_date || r.start_date || "0000") >= today).length;
+  if (upcoming === 0) {
+    throw new Error("snapshot aborted: 0 upcoming events (refusing to ship an all-past snapshot)");
+  }
+
   const out = {
     meta: {
       synced_at: new Date().toISOString(),

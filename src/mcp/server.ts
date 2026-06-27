@@ -111,8 +111,9 @@ server.registerTool(
   async (a) => {
     const { source, synced_at, rows } = await resolveSource(MODE, nowIso());
     const found = getBySlug(rows, a.slug);
-    capture(telemetry, "mcp_tool_call", { tool: "get_conference", found: Boolean(found) });
+    capture(telemetry, "mcp_tool_call", { surface: "mcp", tool: "get_conference", found: Boolean(found) });
     if (!found) return { content: [{ type: "text" as const, text: `No conference with slug "${a.slug}".` }], isError: true };
+    capture(telemetry, "conference_viewed", { slug: a.slug, surface: "mcp" });
     return jsonContent(envelope([found], { source, synced_at, data_source: MODE }));
   },
 );
@@ -128,7 +129,7 @@ server.registerTool(
   async (a) => {
     const { source, synced_at, rows } = await resolveSource(MODE, nowIso());
     const hits = search(rows, a.query, a.limit);
-    capture(telemetry, "mcp_tool_call", { tool: "search_conferences", result_count: hits.length });
+    capture(telemetry, "mcp_tool_call", { surface: "mcp", tool: "search_conferences", result_count: hits.length });
     // Capture the query text only when it returns nothing — gap-loop signal.
     if (hits.length === 0)
       capture(telemetry, "cli_zero_result", { command: "search_conferences", query: a.query, surface: "mcp" });
@@ -151,7 +152,7 @@ server.registerTool(
   async (a) => {
     const { source, synced_at, rows } = await resolveSource(MODE, nowIso());
     const hits = near(rows, a.city, { state: a.state, upcoming: a.upcoming, todayDate: todayIsoDate(nowIso()) });
-    capture(telemetry, "mcp_tool_call", { tool: "conferences_near", result_count: hits.length });
+    capture(telemetry, "mcp_tool_call", { surface: "mcp", tool: "conferences_near", result_count: hits.length });
     return jsonContent(envelope(hits, { source, synced_at, data_source: MODE }));
   },
 );
@@ -167,7 +168,7 @@ server.registerTool(
   async (a) => {
     const { synced_at, rows } = await resolveSource(MODE, nowIso());
     const found = getBySlug(rows, a.slug);
-    capture(telemetry, "mcp_tool_call", { tool: "conference_ics", found: Boolean(found) });
+    capture(telemetry, "mcp_tool_call", { surface: "mcp", tool: "conference_ics", found: Boolean(found) });
     if (!found) return { content: [{ type: "text" as const, text: `No conference with slug "${a.slug}".` }], isError: true };
     return { content: [{ type: "text" as const, text: buildIcs([found], synced_at) }] };
   },
@@ -184,7 +185,7 @@ server.registerTool(
   async (a) => {
     const { source, synced_at, rows } = await resolveSource(MODE, nowIso());
     const agg = stats(rows, (a.by ?? "focus") as StatBy);
-    capture(telemetry, "mcp_tool_call", { tool: "directory_stats", by: a.by ?? "focus" });
+    capture(telemetry, "mcp_tool_call", { surface: "mcp", tool: "directory_stats", by: a.by ?? "focus" });
     return jsonContent(envelope(agg, { source, synced_at, data_source: MODE }));
   },
 );

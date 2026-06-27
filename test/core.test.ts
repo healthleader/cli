@@ -54,9 +54,15 @@ test("filterList --include-past returns the full archive, sorted asc", () => {
   assert.deepEqual(rows.map((c) => c.slug), ["c-2025", "a-2026", "b-2026"]);
 });
 
-test("explicit --from/--to disables the upcoming default", () => {
-  const { rows } = filterList(fix, { from: "2026-01-01", to: "2026-06-30" }, TODAY);
-  assert.deepEqual(rows.map((c) => c.slug), ["a-2026"]);
+test("explicit --from opts into the past within range (disables upcoming floor)", () => {
+  const { rows } = filterList(fix, { from: "2025-01-01", to: "2026-06-30" }, TODAY);
+  assert.deepEqual(rows.map((c) => c.slug), ["c-2025", "a-2026"]);
+});
+
+test("bare --to keeps the upcoming floor (no archive flood)", () => {
+  // A lone upper bound must NOT surface the whole past archive.
+  const { rows } = filterList(fix, { to: "2026-12-31" }, TODAY);
+  assert.deepEqual(rows.map((c) => c.slug), ["b-2026"]);
 });
 
 test("filterList --focus matches focus_area OR themes", () => {

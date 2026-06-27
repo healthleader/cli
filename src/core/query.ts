@@ -51,9 +51,10 @@ function matchesFocus(c: Conference, focus: string): boolean {
 
 export function filterList(rows: Conference[], p: ListParams, todayDate: string): ListResult {
   // Upcoming is the DEFAULT (the directory must not present as stale on first
-  // contact). An explicit --from/--to range or --include-past opts out.
-  const hasExplicitRange = p.from != null || p.to != null;
-  const applyUpcoming = p.includePast !== true && !hasExplicitRange;
+  // contact). --include-past or an explicit --from lower bound opts out; a bare
+  // --to only caps the upper end and keeps the upcoming floor (so it can't
+  // flood an agent with the 2/3-archive when it just wants "before <date>").
+  const applyUpcoming = p.includePast !== true && p.from == null;
 
   let out = rows.filter((c) => {
     if (p.focus && !matchesFocus(c, p.focus)) return false;
