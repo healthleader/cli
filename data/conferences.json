@@ -1,6 +1,6 @@
 {
   "meta": {
-    "synced_at": "2026-06-20T03:38:07.523Z",
+    "synced_at": "2026-06-27T02:26:33.033Z",
     "count": 149,
     "source": "healthleader.ai conference directory (live, status=live)"
   },
@@ -42,7 +42,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "19000"
+      "expected_attendees": "19000",
+      "conference_series_id": null,
+      "updated_at": "2026-01-27T05:57:08.452388+00:00"
     },
     {
       "slug": "washington-state-of-reform-health-policy-conference-2025",
@@ -91,7 +93,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "200-400"
+      "expected_attendees": "200-400",
+      "conference_series_id": null,
+      "updated_at": "2025-12-18T16:34:16.518936+00:00"
     },
     {
       "slug": "jp-morgan-healthcare-conference-2025",
@@ -126,7 +130,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "8000+"
+      "expected_attendees": "8000+",
+      "conference_series_id": null,
+      "updated_at": "2025-12-18T23:38:38.032516+00:00"
     },
     {
       "slug": "hawaii-state-of-reform-health-policy-conference-2025",
@@ -170,7 +176,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "200-400"
+      "expected_attendees": "200-400",
+      "conference_series_id": null,
+      "updated_at": "2025-12-18T23:39:12.000129+00:00"
     },
     {
       "slug": "tahp-ceo-leadership-dinner-2025",
@@ -203,7 +211,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "50-100"
+      "expected_attendees": "50-100",
+      "conference_series_id": "tahp-ceo-leadership-dinner",
+      "updated_at": "2026-02-19T14:11:27.033436+00:00"
     },
     {
       "slug": "vive-conference-2025",
@@ -243,7 +253,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "6000"
+      "expected_attendees": "6000",
+      "conference_series_id": null,
+      "updated_at": "2025-12-19T05:03:19.607196+00:00"
     },
     {
       "slug": "himss-global-conference-exhibition-2025",
@@ -286,7 +298,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "25000"
+      "expected_attendees": "25000",
+      "conference_series_id": null,
+      "updated_at": "2025-12-19T05:03:19.607196+00:00"
     },
     {
       "slug": "health-20-conference-usa-2025",
@@ -323,7 +337,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "1000-2000"
+      "expected_attendees": "1000-2000",
+      "conference_series_id": null,
+      "updated_at": "2025-12-18T23:38:18.429734+00:00"
     },
     {
       "slug": "rise-national-2025",
@@ -359,7 +375,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "1600"
+      "expected_attendees": "1600",
+      "conference_series_id": null,
+      "updated_at": "2025-12-19T05:08:47.777719+00:00"
     },
     {
       "slug": "scahp-q1-membership-meeting-2025",
@@ -392,7 +410,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "50-100"
+      "expected_attendees": "50-100",
+      "conference_series_id": "scahp-q1-membership-meeting",
+      "updated_at": "2026-02-19T14:11:06.757544+00:00"
     },
     {
       "slug": "utah-state-of-reform-health-policy-conference-2025",
@@ -441,7 +461,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "200-400"
+      "expected_attendees": "200-400",
+      "conference_series_id": "utah-state-of-reform",
+      "updated_at": "2026-02-19T14:11:27.033436+00:00"
     },
     {
       "slug": "medicarians-2025",
@@ -475,7 +497,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "4000"
+      "expected_attendees": "4000",
+      "conference_series_id": null,
+      "updated_at": "2025-12-19T05:09:08.630906+00:00"
     },
     {
       "slug": "medicarecon-2025",
@@ -537,7 +561,9 @@
         "Bill Hepscher",
         "Josh Lustig"
       ],
-      "expected_attendees": "500-700"
+      "expected_attendees": "500-700",
+      "conference_series_id": null,
+      "updated_at": "2025-12-18T16:34:16.518936+00:00"
     },
     {
       "slug": "michigan-state-of-reform-health-policy-conference-2025",
@@ -591,7 +617,9 @@
         "Dr. Natasha Bagdasarian (Chief Medical Executive, State of Michigan)",
         "Anita Fox (Director, Michigan Department of Insurance & Financial Services)"
       ],
-      "expected_attendees": "200-400"
+      "expected_attendees": "200-400",
+      "conference_series_id": "michigan-state-of-reform",
+      "updated_at": "2026-02-19T14:11:06.757544+00:00"
     },
     {
       "slug": "naacos-spring-conference-2025",
@@ -631,7 +659,9 @@
       "ceu_offered": true,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "700+"
+      "expected_attendees": "700+",
+      "conference_series_id": "naacos-spring-conference",
+      "updated_at": "2025-12-18T16:34:16.518936+00:00"
     },
     {
       "slug": "cms-health-equity-conference-2025",
@@ -662,7 +692,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "500-1000"
+      "expected_attendees": "500-1000",
+      "conference_series_id": null,
+      "updated_at": "2026-02-19T14:11:53.942373+00:00"
     },
     {
       "slug": "beckers-payer-roundtable-2025",
@@ -702,7 +734,9 @@
       "keynote_speakers": [
         "100+ Elite Payer & Health System Speakers"
       ],
-      "expected_attendees": "300"
+      "expected_attendees": "300",
+      "conference_series_id": "beckers-spring-payer-roundtable",
+      "updated_at": "2025-12-18T16:34:16.518936+00:00"
     },
     {
       "slug": "rise-snp-leadership-summit-2025",
@@ -738,7 +772,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "300-500"
+      "expected_attendees": "300-500",
+      "conference_series_id": "rise-snp-leadership-summit",
+      "updated_at": "2026-02-19T14:11:40.638138+00:00"
     },
     {
       "slug": "vahp-annual-conference-2025",
@@ -767,7 +803,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "200-400"
+      "expected_attendees": "200-400",
+      "conference_series_id": "vahp-annual-conference",
+      "updated_at": "2026-02-19T14:11:27.033436+00:00"
     },
     {
       "slug": "apg-spring-conference-2025",
@@ -800,7 +838,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "300-500"
+      "expected_attendees": "300-500",
+      "conference_series_id": "apg-spring-conference",
+      "updated_at": "2025-12-18T16:34:16.518936+00:00"
     },
     {
       "slug": "florida-state-of-reform-health-policy-conference-2025",
@@ -851,7 +891,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "200-400"
+      "expected_attendees": "200-400",
+      "conference_series_id": "florida-state-of-reform",
+      "updated_at": "2026-02-19T14:11:06.757544+00:00"
     },
     {
       "slug": "mississippi-association-of-health-plans-annual-conference-2025",
@@ -884,7 +926,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "50-100"
+      "expected_attendees": "50-100",
+      "conference_series_id": "mississippi-ahp-annual",
+      "updated_at": "2026-02-19T14:11:27.033436+00:00"
     },
     {
       "slug": "south-carolina-state-of-reform-health-policy-conference-2025",
@@ -934,7 +978,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "200-400"
+      "expected_attendees": "200-400",
+      "conference_series_id": "south-carolina-state-of-reform",
+      "updated_at": "2026-02-19T14:11:27.033436+00:00"
     },
     {
       "slug": "ahip-2025",
@@ -969,7 +1015,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "5,000+"
+      "expected_attendees": "5,000+",
+      "conference_series_id": null,
+      "updated_at": "2025-12-19T05:08:23.651761+00:00"
     },
     {
       "slug": "hfma-annual-conference-2025",
@@ -1003,7 +1051,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "3000"
+      "expected_attendees": "3000",
+      "conference_series_id": null,
+      "updated_at": "2025-12-19T05:09:08.630906+00:00"
     },
     {
       "slug": "aahp-annual-2025",
@@ -1046,7 +1096,9 @@
       "keynote_speakers": [
         "Regional health plan executives"
       ],
-      "expected_attendees": "150+"
+      "expected_attendees": "150+",
+      "conference_series_id": "aahp-annual",
+      "updated_at": "2026-02-19T14:11:27.033436+00:00"
     },
     {
       "slug": "directtrust-annual-conference-2025",
@@ -1080,7 +1132,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "300"
+      "expected_attendees": "300",
+      "conference_series_id": null,
+      "updated_at": "2025-12-19T05:08:47.777719+00:00"
     },
     {
       "slug": "rise-west-2025",
@@ -1116,7 +1170,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "500"
+      "expected_attendees": "500",
+      "conference_series_id": null,
+      "updated_at": "2025-12-19T05:08:47.777719+00:00"
     },
     {
       "slug": "inland-northwest-washington-state-of-reform-health-policy-conference-2025",
@@ -1167,7 +1223,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "200-400"
+      "expected_attendees": "200-400",
+      "conference_series_id": "inland-northwest-washington-state-of-reform",
+      "updated_at": "2026-02-19T14:11:06.757544+00:00"
     },
     {
       "slug": "nihb-national-tribal-health-conference-2025",
@@ -1212,7 +1270,9 @@
         "Tribal health directors",
         "Federal partners"
       ],
-      "expected_attendees": "500+"
+      "expected_attendees": "500+",
+      "conference_series_id": "nihb-national-tribal-health",
+      "updated_at": "2026-02-19T14:11:06.757544+00:00"
     },
     {
       "slug": "nashp-annual-conference-2025",
@@ -1250,7 +1310,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "600"
+      "expected_attendees": "600",
+      "conference_series_id": null,
+      "updated_at": "2025-12-19T05:03:19.607196+00:00"
     },
     {
       "slug": "mhpa-2025",
@@ -1285,7 +1347,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "1,500+"
+      "expected_attendees": "1,500+",
+      "conference_series_id": null,
+      "updated_at": "2025-12-19T05:09:28.322497+00:00"
     },
     {
       "slug": "alaska-state-of-reform-health-policy-conference-2025",
@@ -1340,7 +1404,9 @@
         "Emily Ricci (Deputy Commissioner & State Medicaid Director)",
         "Shannon Breitzman (Managing Principal, HMA)"
       ],
-      "expected_attendees": "200-400"
+      "expected_attendees": "200-400",
+      "conference_series_id": "alaska-state-of-reform",
+      "updated_at": "2026-02-19T14:11:06.757544+00:00"
     },
     {
       "slug": "minnesota-state-of-reform-health-policy-conference-2025",
@@ -1396,7 +1462,9 @@
         "Lisa Erickson (CEO, Medica)",
         "Andrea Walsh (CEO, Health Partners)"
       ],
-      "expected_attendees": "200-400"
+      "expected_attendees": "200-400",
+      "conference_series_id": "minnesota-state-of-reform",
+      "updated_at": "2026-02-19T14:11:06.757544+00:00"
     },
     {
       "slug": "civitas-networks-for-health-annual-conference-2025",
@@ -1437,7 +1505,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "750"
+      "expected_attendees": "750",
+      "conference_series_id": null,
+      "updated_at": "2025-12-18T23:34:20.675066+00:00"
     },
     {
       "slug": "beckers-health-it-digital-rcm-2025",
@@ -1470,7 +1540,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "2500"
+      "expected_attendees": "2500",
+      "conference_series_id": "beckers-health-it-digital-rcm",
+      "updated_at": "2026-02-19T14:11:40.638138+00:00"
     },
     {
       "slug": "illinois-state-of-reform-health-policy-conference-2025",
@@ -1521,7 +1593,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "200-400"
+      "expected_attendees": "200-400",
+      "conference_series_id": "illinois-state-of-reform",
+      "updated_at": "2026-02-19T14:11:06.757544+00:00"
     },
     {
       "slug": "attest-hedis-2025",
@@ -1562,7 +1636,9 @@
         "Attest experts",
         "Client health plan speakers"
       ],
-      "expected_attendees": "200+"
+      "expected_attendees": "200+",
+      "conference_series_id": "attest-hedis",
+      "updated_at": "2026-02-19T14:11:27.033436+00:00"
     },
     {
       "slug": "southern-california-state-of-reform-health-policy-conference-2025",
@@ -1611,7 +1687,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "200-400"
+      "expected_attendees": "200-400",
+      "conference_series_id": "southern-california-state-of-reform",
+      "updated_at": "2026-02-19T14:11:06.757544+00:00"
     },
     {
       "slug": "naacos-fall-conference-2025",
@@ -1645,7 +1723,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "500-800"
+      "expected_attendees": "500-800",
+      "conference_series_id": null,
+      "updated_at": "2025-12-18T23:39:12.000129+00:00"
     },
     {
       "slug": "scahp-q3-membership-meeting-2025",
@@ -1674,7 +1754,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "50-100"
+      "expected_attendees": "50-100",
+      "conference_series_id": "scahp-q3-membership-meeting",
+      "updated_at": "2026-02-19T14:11:27.033436+00:00"
     },
     {
       "slug": "ncqa-summit-2025",
@@ -1726,7 +1808,9 @@
         "Margaret O'Kane (NCQA President)",
         "CMS Innovation Center leaders"
       ],
-      "expected_attendees": "1,500+"
+      "expected_attendees": "1,500+",
+      "conference_series_id": null,
+      "updated_at": "2025-12-18T16:34:16.518936+00:00"
     },
     {
       "slug": "achp-annual-symposium-2025",
@@ -1759,7 +1843,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "300"
+      "expected_attendees": "300",
+      "conference_series_id": "achp-annual-symposium",
+      "updated_at": "2026-02-19T14:11:40.638138+00:00"
     },
     {
       "slug": "hma-conference-2025",
@@ -1788,7 +1874,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": null
+      "expected_attendees": null,
+      "conference_series_id": null,
+      "updated_at": "2025-12-18T23:37:54.370232+00:00"
     },
     {
       "slug": "indiana-state-of-reform-health-policy-conference-2025",
@@ -1832,7 +1920,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "200-400"
+      "expected_attendees": "200-400",
+      "conference_series_id": "indiana-state-of-reform",
+      "updated_at": "2026-02-19T14:11:06.757544+00:00"
     },
     {
       "slug": "hlth-2025",
@@ -1872,7 +1962,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "12250"
+      "expected_attendees": "12250",
+      "conference_series_id": null,
+      "updated_at": "2025-12-19T05:03:19.607196+00:00"
     },
     {
       "slug": "colorado-state-of-reform-health-policy-conference-2025",
@@ -1916,7 +2008,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "200-400"
+      "expected_attendees": "200-400",
+      "conference_series_id": "colorado-state-of-reform",
+      "updated_at": "2026-02-19T14:11:06.757544+00:00"
     },
     {
       "slug": "rise-hedis-quality-2025",
@@ -1976,7 +2070,9 @@
         "Analytics leaders",
         "Compliance executives"
       ],
-      "expected_attendees": "600+"
+      "expected_attendees": "600+",
+      "conference_series_id": null,
+      "updated_at": "2026-05-17T23:57:52.122062+00:00"
     },
     {
       "slug": "oregon-state-of-reform-health-policy-conference-2025",
@@ -2030,7 +2126,9 @@
         "Clare Pierce-Wrobel (Health Policy & Analytics Director, OHA)",
         "Eric Hunter (CEO, CareOregon)"
       ],
-      "expected_attendees": "200-400"
+      "expected_attendees": "200-400",
+      "conference_series_id": "oregon-state-of-reform",
+      "updated_at": "2026-02-19T14:11:27.033436+00:00"
     },
     {
       "slug": "apg-fall-conference-2025",
@@ -2064,7 +2162,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "600"
+      "expected_attendees": "600",
+      "conference_series_id": "apg-fall",
+      "updated_at": "2025-12-19T05:08:23.651761+00:00"
     },
     {
       "slug": "behavioral-health-tech-2025",
@@ -2103,7 +2203,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "2000+"
+      "expected_attendees": "2000+",
+      "conference_series_id": null,
+      "updated_at": "2025-12-19T05:03:19.607196+00:00"
     },
     {
       "slug": "namd-2025",
@@ -2150,7 +2252,9 @@
         "CMS leaders",
         "Federal partners"
       ],
-      "expected_attendees": "1,500+"
+      "expected_attendees": "1,500+",
+      "conference_series_id": null,
+      "updated_at": "2025-12-18T16:34:16.518936+00:00"
     },
     {
       "slug": "new-york-association-of-health-plans-annual-conference-2025",
@@ -2183,7 +2287,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "150-200"
+      "expected_attendees": "150-200",
+      "conference_series_id": "nyhpa-annual-conference",
+      "updated_at": "2026-02-19T14:11:06.757544+00:00"
     },
     {
       "slug": "scahp-annual-health-care-conference-2025",
@@ -2212,7 +2318,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "200-400"
+      "expected_attendees": "200-400",
+      "conference_series_id": "scahp-annual-health-care-conference",
+      "updated_at": "2026-02-19T14:11:27.033436+00:00"
     },
     {
       "slug": "vahp-fall-forum-2025",
@@ -2264,7 +2372,9 @@
         "Rebecca Mendoza, Associate Principal at Health Management Associates",
         "Holly Mortlock, Deputy Director at State Corporation Commission"
       ],
-      "expected_attendees": "100-150"
+      "expected_attendees": "100-150",
+      "conference_series_id": "vahp-fall-forum",
+      "updated_at": "2026-02-19T14:11:27.033436+00:00"
     },
     {
       "slug": "lahp-annual-meeting-conference-louisiana-2025",
@@ -2296,7 +2406,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "350+"
+      "expected_attendees": "350+",
+      "conference_series_id": "lahp-annual-meeting",
+      "updated_at": "2026-02-19T14:11:27.033436+00:00"
     },
     {
       "slug": "rise-stars-masterclass-2025",
@@ -2354,7 +2466,9 @@
       "keynote_speakers": [
         "Stars and quality executives from health plans"
       ],
-      "expected_attendees": "500+"
+      "expected_attendees": "500+",
+      "conference_series_id": null,
+      "updated_at": "2025-12-18T16:34:16.518936+00:00"
     },
     {
       "slug": "ces-digital-health-summit-2026",
@@ -2402,7 +2516,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "12000"
+      "expected_attendees": "12000",
+      "conference_series_id": null,
+      "updated_at": "2025-12-18T16:34:16.518936+00:00"
     },
     {
       "slug": "washington-state-of-reform-health-policy-conference-2026",
@@ -2451,7 +2567,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "400"
+      "expected_attendees": "400",
+      "conference_series_id": null,
+      "updated_at": "2025-12-18T16:34:16.518936+00:00"
     },
     {
       "slug": "jp-morgan-healthcare-conference-2026",
@@ -2485,7 +2603,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "8000"
+      "expected_attendees": "8000",
+      "conference_series_id": null,
+      "updated_at": "2025-12-18T16:34:16.518936+00:00"
     },
     {
       "slug": "hawaii-state-of-reform-health-policy-conference-2026",
@@ -2534,7 +2654,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "300"
+      "expected_attendees": "300",
+      "conference_series_id": null,
+      "updated_at": "2025-12-18T16:34:16.518936+00:00"
     },
     {
       "slug": "fierce-jpm-week-2026",
@@ -2579,7 +2701,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "1000"
+      "expected_attendees": "1000",
+      "conference_series_id": null,
+      "updated_at": "2025-12-20T06:18:06.053077+00:00"
     },
     {
       "slug": "achp-spring-board-2025",
@@ -2619,7 +2743,9 @@
         "ACHP member CEOs",
         "Policy leaders"
       ],
-      "expected_attendees": "100+"
+      "expected_attendees": "100+",
+      "conference_series_id": null,
+      "updated_at": "2025-12-18T16:34:16.518936+00:00"
     },
     {
       "slug": "medicare-advantage-leadership-innovations-2026",
@@ -2673,7 +2799,9 @@
         "Dan Weaver SVP Stars & Quality",
         "Rebecca Welling VP Risk Adjustment"
       ],
-      "expected_attendees": "300+"
+      "expected_attendees": "300+",
+      "conference_series_id": null,
+      "updated_at": "2025-12-18T16:34:16.518936+00:00"
     },
     {
       "slug": "icdh-intl-conf-on-digital-healthcare-2026",
@@ -2709,7 +2837,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "200"
+      "expected_attendees": "200",
+      "conference_series_id": null,
+      "updated_at": "2025-12-18T23:34:20.675066+00:00"
     },
     {
       "slug": "medicaid-innovations-forum-2026",
@@ -2758,7 +2888,9 @@
         "Chris Esguerra MD, CMO Health Plan of San Mateo",
         "Jacqueline Collins RN, CareSource"
       ],
-      "expected_attendees": "250"
+      "expected_attendees": "250",
+      "conference_series_id": null,
+      "updated_at": "2025-12-18T16:34:16.518936+00:00"
     },
     {
       "slug": "medical-cost-containment-summit-kisaco-research-2026",
@@ -2794,7 +2926,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "300"
+      "expected_attendees": "300",
+      "conference_series_id": null,
+      "updated_at": "2025-12-18T16:34:16.518936+00:00"
     },
     {
       "slug": "neebc-innovation-in-employee-benefits-2026",
@@ -2830,7 +2964,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "300"
+      "expected_attendees": "300",
+      "conference_series_id": null,
+      "updated_at": "2025-12-18T23:34:20.675066+00:00"
     },
     {
       "slug": "hpa-alliance-value-visit-commercial-products-2026",
@@ -2864,7 +3000,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "50-100"
+      "expected_attendees": "50-100",
+      "conference_series_id": null,
+      "updated_at": "2025-12-19T05:10:16.874735+00:00"
     },
     {
       "slug": "astp-annual-meeting-2026",
@@ -2897,7 +3035,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "400"
+      "expected_attendees": "400",
+      "conference_series_id": null,
+      "updated_at": "2025-12-18T16:34:16.518936+00:00"
     },
     {
       "slug": "vive-conference-2026",
@@ -2968,7 +3108,9 @@
         "Dr. Shez Partovi, MD - Chief Innovation Officer, Philips",
         "Aneesh Chopra - Former U.S. CTO (Moderator)"
       ],
-      "expected_attendees": "9,000+"
+      "expected_attendees": "9,000+",
+      "conference_series_id": null,
+      "updated_at": "2026-02-19T16:05:53.988028+00:00"
     },
     {
       "slug": "population-health-management-summit-for-payers-providers-2026",
@@ -3031,7 +3173,9 @@
         "Heather Leisy, MD, MBA - Medical Director, Population Health Quality, UC Davis Health",
         "Purvee Kempf - Deputy Executive Director, DC Health Benefit Exchange Authority"
       ],
-      "expected_attendees": "300"
+      "expected_attendees": "300",
+      "conference_series_id": null,
+      "updated_at": "2026-02-19T16:06:38.481103+00:00"
     },
     {
       "slug": "rise-medicare-marketing-sales-summit-2026",
@@ -3095,7 +3239,9 @@
         "Melissa Bazzo - DSNP Growth Workshop",
         "Ron Sotak - DSNP Growth Workshop"
       ],
-      "expected_attendees": "400"
+      "expected_attendees": "400",
+      "conference_series_id": null,
+      "updated_at": "2026-02-19T16:05:22.199885+00:00"
     },
     {
       "slug": "accountable-for-health-hcvw-conference-2026",
@@ -3144,7 +3290,9 @@
         "Dr. Tom Lally - Founder & CEO, Bloom Healthcare",
         "Mara McDermott - CEO, Accountable for Health (Host)"
       ],
-      "expected_attendees": "200-300"
+      "expected_attendees": "200-300",
+      "conference_series_id": null,
+      "updated_at": "2026-02-19T16:06:46.168762+00:00"
     },
     {
       "slug": "himss-global-conference-exhibition-2026",
@@ -3223,7 +3371,9 @@
         "Daymond John - Entrepreneur & Shark Tank Star (Emerge Experience Keynote)",
         "Dr. Jesse Ehrenfeld - Former AMA President (Physicians Forum Keynote)"
       ],
-      "expected_attendees": "25,000+"
+      "expected_attendees": "25,000+",
+      "conference_series_id": null,
+      "updated_at": "2026-02-19T16:06:10.048168+00:00"
     },
     {
       "slug": "cms-quality-conference-2026",
@@ -3256,7 +3406,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "500"
+      "expected_attendees": "500",
+      "conference_series_id": null,
+      "updated_at": "2026-05-17T23:11:31.632976+00:00"
     },
     {
       "slug": "mhpa-advocacy-leadership-forum-2026",
@@ -3314,7 +3466,9 @@
         "Paige Winfield Cunningham - Health Reporter, Washington Post",
         "Dorothy Mills-Gregg - Health Reporter, Inside Health Policy"
       ],
-      "expected_attendees": "200-300"
+      "expected_attendees": "200-300",
+      "conference_series_id": null,
+      "updated_at": "2026-02-19T16:06:55.571067+00:00"
     },
     {
       "slug": "rise-national-2026",
@@ -3385,7 +3539,9 @@
         "Jen Callahan - CEO, ATRIO Health Plans",
         "Namita Seth Mohta, MD - Executive Editor, NEJM Catalyst"
       ],
-      "expected_attendees": "1,600+"
+      "expected_attendees": "1,600+",
+      "conference_series_id": null,
+      "updated_at": "2026-02-19T16:06:22.453132+00:00"
     },
     {
       "slug": "ahip-medicare-medicaid-duals-commercial-markets-forum-mmdc26-2026",
@@ -3434,7 +3590,9 @@
         "Kate McEvoy - Executive Director, NAMD",
         "Shannon M. McMahon, MPA - Exec Director Medicaid Policy, Kaiser Permanente"
       ],
-      "expected_attendees": "600"
+      "expected_attendees": "600",
+      "conference_series_id": null,
+      "updated_at": "2026-02-19T16:07:02.286782+00:00"
     },
     {
       "slug": "rise-sdoh-summit-2026",
@@ -3499,7 +3657,9 @@
         "Sujata Bajaj - CTO, Yuvo Health",
         "Rachel Landauer - Clinical Instructor, Harvard Law School"
       ],
-      "expected_attendees": "400+"
+      "expected_attendees": "400+",
+      "conference_series_id": null,
+      "updated_at": "2026-02-19T16:05:35.824356+00:00"
     },
     {
       "slug": "scahp-q1-membership-meeting-2026",
@@ -3532,7 +3692,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "50-100"
+      "expected_attendees": "50-100",
+      "conference_series_id": "scahp-q1-membership-meeting",
+      "updated_at": "2026-02-19T14:29:14.129249+00:00"
     },
     {
       "slug": "medicaid-managed-care-leadership-summit-2026",
@@ -3567,7 +3729,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "100-200"
+      "expected_attendees": "100-200",
+      "conference_series_id": null,
+      "updated_at": "2025-12-19T05:10:16.874735+00:00"
     },
     {
       "slug": "health-20-conference-usa-2026",
@@ -3609,7 +3773,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "2000"
+      "expected_attendees": "2000",
+      "conference_series_id": null,
+      "updated_at": "2025-12-18T16:34:16.518936+00:00"
     },
     {
       "slug": "tribal-public-health-conference-2026",
@@ -3645,7 +3811,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "300"
+      "expected_attendees": "300",
+      "conference_series_id": null,
+      "updated_at": "2025-12-18T16:34:16.518936+00:00"
     },
     {
       "slug": "beckers-spring-payer-roundtable-2026",
@@ -3682,7 +3850,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "500"
+      "expected_attendees": "500",
+      "conference_series_id": "beckers-spring-payer-roundtable",
+      "updated_at": "2025-12-18T16:34:16.518936+00:00"
     },
     {
       "slug": "beckers-16th-annual-meeting-2026",
@@ -3727,7 +3897,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "3000"
+      "expected_attendees": "3000",
+      "conference_series_id": null,
+      "updated_at": "2025-12-18T16:34:16.518936+00:00"
     },
     {
       "slug": "medicarecon-2026",
@@ -3760,7 +3932,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "3000"
+      "expected_attendees": "3000",
+      "conference_series_id": null,
+      "updated_at": "2025-12-19T05:09:08.630906+00:00"
     },
     {
       "slug": "snp-alliance-members-only-spring-roundtable-2026",
@@ -3795,7 +3969,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "50-100"
+      "expected_attendees": "50-100",
+      "conference_series_id": null,
+      "updated_at": "2025-12-19T05:04:08.136308+00:00"
     },
     {
       "slug": "medicarians-2026",
@@ -3840,7 +4016,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "500"
+      "expected_attendees": "500",
+      "conference_series_id": null,
+      "updated_at": "2025-12-18T16:34:16.518936+00:00"
     },
     {
       "slug": "naacos-spring-conference-2026",
@@ -3874,7 +4052,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "600"
+      "expected_attendees": "600",
+      "conference_series_id": "naacos-spring-conference",
+      "updated_at": "2025-12-18T16:34:16.518936+00:00"
     },
     {
       "slug": "michigan-state-of-reform-health-policy-conference-2026",
@@ -3910,7 +4090,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "200-400"
+      "expected_attendees": "200-400",
+      "conference_series_id": "michigan-state-of-reform",
+      "updated_at": "2026-02-19T14:29:14.129249+00:00"
     },
     {
       "slug": "12th-annual-funding-social-drivers-of-health-summit-2026",
@@ -3953,7 +4135,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "200-400"
+      "expected_attendees": "200-400",
+      "conference_series_id": null,
+      "updated_at": "2025-12-19T05:02:27.613772+00:00"
     },
     {
       "slug": "national-medicare-advantage-congress-2026",
@@ -4015,7 +4199,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "300-500"
+      "expected_attendees": "300-500",
+      "conference_series_id": null,
+      "updated_at": "2025-12-19T05:04:08.136308+00:00"
     },
     {
       "slug": "wellvana-accountable-care-symposium-2026",
@@ -4051,7 +4237,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "250"
+      "expected_attendees": "250",
+      "conference_series_id": null,
+      "updated_at": "2025-12-18T16:34:16.518936+00:00"
     },
     {
       "slug": "accelerating-health-equity-conference-aha-2026",
@@ -4086,7 +4274,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "500-1000"
+      "expected_attendees": "500-1000",
+      "conference_series_id": null,
+      "updated_at": "2025-12-19T05:02:27.613772+00:00"
     },
     {
       "slug": "maryland-state-of-reform-health-policy-conference-2026",
@@ -4115,7 +4305,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": null
+      "expected_attendees": null,
+      "conference_series_id": null,
+      "updated_at": "2026-05-28T23:26:50.461096+00:00"
     },
     {
       "slug": "vahp-annual-conference-2026",
@@ -4149,7 +4341,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "200-400"
+      "expected_attendees": "200-400",
+      "conference_series_id": "vahp-annual-conference",
+      "updated_at": "2026-02-19T14:29:14.129249+00:00"
     },
     {
       "slug": "apg-spring-conference-2026",
@@ -4183,7 +4377,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "600"
+      "expected_attendees": "600",
+      "conference_series_id": "apg-spring-conference",
+      "updated_at": "2026-05-17T23:13:05.835727+00:00"
     },
     {
       "slug": "hfma-annual-conference-2026",
@@ -4217,7 +4413,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "3000"
+      "expected_attendees": "3000",
+      "conference_series_id": null,
+      "updated_at": "2026-05-17T23:09:49.975551+00:00"
     },
     {
       "slug": "ahip-2026",
@@ -4283,7 +4481,9 @@
         "Amazon Pharmacy leadership",
         "Malcolm Gladwell"
       ],
-      "expected_attendees": "5,000+"
+      "expected_attendees": "5,000+",
+      "conference_series_id": null,
+      "updated_at": "2026-05-16T19:59:26.957812+00:00"
     },
     {
       "slug": "rise-qualipalooza-2026",
@@ -4332,7 +4532,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "500"
+      "expected_attendees": "500",
+      "conference_series_id": "rise-qualipalooza",
+      "updated_at": "2026-05-16T19:00:31.689187+00:00"
     },
     {
       "slug": "mahp-annual-conference-michigan-2026",
@@ -4365,7 +4567,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "100-150"
+      "expected_attendees": "100-150",
+      "conference_series_id": null,
+      "updated_at": "2026-05-16T19:59:46.873449+00:00"
     },
     {
       "slug": "aahp-annual-2026",
@@ -4406,7 +4610,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "150+"
+      "expected_attendees": "150+",
+      "conference_series_id": "aahp-annual",
+      "updated_at": "2026-05-29T00:55:15.851553+00:00"
     },
     {
       "slug": "nihb-national-tribal-health-conference-2026",
@@ -4443,7 +4649,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "500+"
+      "expected_attendees": "500+",
+      "conference_series_id": "nihb-national-tribal-health",
+      "updated_at": "2026-02-19T14:29:14.129249+00:00"
     },
     {
       "slug": "lahp-annual-meeting-conference-louisiana-2026",
@@ -4477,7 +4685,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "350+"
+      "expected_attendees": "350+",
+      "conference_series_id": "lahp-annual-meeting",
+      "updated_at": "2026-05-29T00:55:15.851553+00:00"
     },
     {
       "slug": "rise-west-2026",
@@ -4522,7 +4732,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "500"
+      "expected_attendees": "500",
+      "conference_series_id": null,
+      "updated_at": "2026-05-17T23:06:40.218821+00:00"
     },
     {
       "slug": "southern-california-state-of-reform-health-policy-conference-2026",
@@ -4556,7 +4768,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "200-400"
+      "expected_attendees": "200-400",
+      "conference_series_id": "southern-california-state-of-reform",
+      "updated_at": "2026-02-19T14:29:14.129249+00:00"
     },
     {
       "slug": "achp-annual-symposium-2026",
@@ -4592,7 +4806,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "100-200"
+      "expected_attendees": "100-200",
+      "conference_series_id": "achp-annual-symposium",
+      "updated_at": "2026-05-17T23:10:46.928202+00:00"
     },
     {
       "slug": "beckers-health-it-digital-rcm-2026",
@@ -4636,7 +4852,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "2500"
+      "expected_attendees": "2500",
+      "conference_series_id": "beckers-health-it-digital-rcm",
+      "updated_at": "2026-05-17T23:14:21.247691+00:00"
     },
     {
       "slug": "oahp-convention-2026",
@@ -4674,7 +4892,9 @@
       "keynote_speakers": [
         "Ohio health plan executives"
       ],
-      "expected_attendees": "200+"
+      "expected_attendees": "200+",
+      "conference_series_id": null,
+      "updated_at": "2026-05-16T20:00:01.321988+00:00"
     },
     {
       "slug": "rise-member-engagement-2026",
@@ -4730,7 +4950,9 @@
         "Senior leaders from health plans",
         "CBO executives"
       ],
-      "expected_attendees": "400+"
+      "expected_attendees": "400+",
+      "conference_series_id": null,
+      "updated_at": "2026-05-16T19:00:31.689187+00:00"
     },
     {
       "slug": "pennsylvania-state-of-reform-health-policy-conference-2026",
@@ -4759,7 +4981,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": null
+      "expected_attendees": null,
+      "conference_series_id": null,
+      "updated_at": "2026-05-28T23:26:50.461096+00:00"
     },
     {
       "slug": "civitas-networks-for-health-annual-conference-2026",
@@ -4793,7 +5017,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "400"
+      "expected_attendees": "400",
+      "conference_series_id": null,
+      "updated_at": "2026-05-16T20:01:12.389064+00:00"
     },
     {
       "slug": "behavioral-health-tech-2026",
@@ -4844,7 +5070,9 @@
         "Leigh Steinberg",
         "Alyson Stoner"
       ],
-      "expected_attendees": "2000+"
+      "expected_attendees": "2000+",
+      "conference_series_id": null,
+      "updated_at": "2026-05-16T20:00:33.741028+00:00"
     },
     {
       "slug": "ahip-state-issues-retreat-2026",
@@ -4873,7 +5101,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": null
+      "expected_attendees": null,
+      "conference_series_id": null,
+      "updated_at": "2026-05-28T23:26:50.461096+00:00"
     },
     {
       "slug": "wisconsin-association-of-health-plans-annual-meeting-2026",
@@ -4906,7 +5136,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "200"
+      "expected_attendees": "200",
+      "conference_series_id": null,
+      "updated_at": "2026-05-17T23:15:40.374687+00:00"
     },
     {
       "slug": "nashp-annual-conference-2026",
@@ -4955,7 +5187,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "600"
+      "expected_attendees": "600",
+      "conference_series_id": null,
+      "updated_at": "2026-05-17T23:12:40.405678+00:00"
     },
     {
       "slug": "mhpa-2026",
@@ -5003,7 +5237,9 @@
         "CMS leaders",
         "Health plan executives"
       ],
-      "expected_attendees": "1,500+"
+      "expected_attendees": "1,500+",
+      "conference_series_id": null,
+      "updated_at": "2026-05-16T19:58:38.645314+00:00"
     },
     {
       "slug": "minnesota-state-of-reform-health-policy-conference-2026",
@@ -5039,7 +5275,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "200-400"
+      "expected_attendees": "200-400",
+      "conference_series_id": "minnesota-state-of-reform",
+      "updated_at": "2026-02-19T14:29:14.129249+00:00"
     },
     {
       "slug": "attest-hedis-2026",
@@ -5075,7 +5313,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "200+"
+      "expected_attendees": "200+",
+      "conference_series_id": "attest-hedis",
+      "updated_at": "2026-05-29T00:55:15.851553+00:00"
     },
     {
       "slug": "ncqa-summit-2026",
@@ -5121,7 +5361,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "800"
+      "expected_attendees": "800",
+      "conference_series_id": null,
+      "updated_at": "2026-05-17T23:58:41.053464+00:00"
     },
     {
       "slug": "hma-conference-2026",
@@ -5155,7 +5397,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "500"
+      "expected_attendees": "500",
+      "conference_series_id": null,
+      "updated_at": "2026-05-16T19:59:04.24891+00:00"
     },
     {
       "slug": "naacos-fall-2026",
@@ -5188,7 +5432,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "500"
+      "expected_attendees": "500",
+      "conference_series_id": null,
+      "updated_at": "2026-05-16T20:08:59.857056+00:00"
     },
     {
       "slug": "iamhp-annual-conference-illinois-2026",
@@ -5221,7 +5467,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "100-150"
+      "expected_attendees": "100-150",
+      "conference_series_id": null,
+      "updated_at": "2026-05-16T20:01:50.300088+00:00"
     },
     {
       "slug": "cahp-annual-conference-california-2026",
@@ -5254,7 +5502,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "100-200"
+      "expected_attendees": "100-200",
+      "conference_series_id": null,
+      "updated_at": "2026-05-16T20:02:22.383636+00:00"
     },
     {
       "slug": "directtrust-annual-conference-2026",
@@ -5290,7 +5540,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "300"
+      "expected_attendees": "300",
+      "conference_series_id": null,
+      "updated_at": "2026-05-17T23:14:51.286967+00:00"
     },
     {
       "slug": "namd-fall-2026",
@@ -5323,7 +5575,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "300"
+      "expected_attendees": "300",
+      "conference_series_id": null,
+      "updated_at": "2026-05-17T23:13:28.272801+00:00"
     },
     {
       "slug": "risk-adjustment-forum-2026",
@@ -5372,7 +5626,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "400"
+      "expected_attendees": "400",
+      "conference_series_id": null,
+      "updated_at": "2026-05-17T23:08:52.591849+00:00"
     },
     {
       "slug": "ahip-executive-leadership-summit-2026",
@@ -5401,7 +5657,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": null
+      "expected_attendees": null,
+      "conference_series_id": null,
+      "updated_at": "2026-05-28T23:26:50.461096+00:00"
     },
     {
       "slug": "texas-association-of-health-plan-covered-conference-expo-2026",
@@ -5439,7 +5697,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "500-800"
+      "expected_attendees": "500-800",
+      "conference_series_id": null,
+      "updated_at": "2026-05-16T20:08:59.857056+00:00"
     },
     {
       "slug": "beckers-fall-payer-roundtable-2026",
@@ -5483,7 +5743,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "300"
+      "expected_attendees": "300",
+      "conference_series_id": null,
+      "updated_at": "2026-05-17T23:13:50.187064+00:00"
     },
     {
       "slug": "rise-hedis-quality-2026",
@@ -5533,7 +5795,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "400"
+      "expected_attendees": "400",
+      "conference_series_id": null,
+      "updated_at": "2026-05-17T23:07:51.532063+00:00"
     },
     {
       "slug": "north-carolina-state-of-reform-health-policy-conference-2026",
@@ -5562,7 +5826,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": null
+      "expected_attendees": null,
+      "conference_series_id": null,
+      "updated_at": "2026-05-28T23:26:50.461096+00:00"
     },
     {
       "slug": "hlth-2026",
@@ -5604,7 +5870,9 @@
       "keynote_speakers": [
         "400+ speakers across health systems, pharma, payers, and tech"
       ],
-      "expected_attendees": "12250"
+      "expected_attendees": "12250",
+      "conference_series_id": null,
+      "updated_at": "2026-05-16T20:02:48.500716+00:00"
     },
     {
       "slug": "illinois-state-of-reform-health-policy-conference-2026",
@@ -5640,7 +5908,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "200-400"
+      "expected_attendees": "200-400",
+      "conference_series_id": "illinois-state-of-reform",
+      "updated_at": "2026-05-17T23:01:39.03952+00:00"
     },
     {
       "slug": "new-york-association-of-health-plans-annual-conference-2026",
@@ -5673,7 +5943,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "150-200"
+      "expected_attendees": "150-200",
+      "conference_series_id": "nyhpa-annual-conference",
+      "updated_at": "2026-02-19T14:29:14.129249+00:00"
     },
     {
       "slug": "apg-fall-conference-2026",
@@ -5706,7 +5978,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "600"
+      "expected_attendees": "600",
+      "conference_series_id": "apg-fall",
+      "updated_at": "2026-05-17T23:13:05.835727+00:00"
     },
     {
       "slug": "rise-stars-masterclass-2026",
@@ -5755,7 +6029,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": "300"
+      "expected_attendees": "300",
+      "conference_series_id": null,
+      "updated_at": "2026-05-17T23:08:18.062932+00:00"
     },
     {
       "slug": "ahip-mmdc-forum-2027",
@@ -5784,7 +6060,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": null
+      "expected_attendees": null,
+      "conference_series_id": null,
+      "updated_at": "2026-05-28T23:26:50.461096+00:00"
     },
     {
       "slug": "hfma-revenue-cycle-conference-2027",
@@ -5813,7 +6091,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": null
+      "expected_attendees": null,
+      "conference_series_id": null,
+      "updated_at": "2026-05-28T23:26:50.461096+00:00"
     },
     {
       "slug": "hfma-leadership-summit-2027",
@@ -5842,7 +6122,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": null
+      "expected_attendees": null,
+      "conference_series_id": null,
+      "updated_at": "2026-05-28T23:26:50.461096+00:00"
     },
     {
       "slug": "apg-spring-conference-2027",
@@ -5871,7 +6153,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": null
+      "expected_attendees": null,
+      "conference_series_id": null,
+      "updated_at": "2026-05-28T23:26:50.461096+00:00"
     },
     {
       "slug": "ahip-2027",
@@ -5900,7 +6184,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": null
+      "expected_attendees": null,
+      "conference_series_id": null,
+      "updated_at": "2026-05-28T23:26:50.461096+00:00"
     },
     {
       "slug": "hfma-annual-conference-2027",
@@ -5929,7 +6215,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": null
+      "expected_attendees": null,
+      "conference_series_id": null,
+      "updated_at": "2026-05-28T23:26:50.461096+00:00"
     },
     {
       "slug": "ahip-mmdc-forum-2028",
@@ -5958,7 +6246,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": null
+      "expected_attendees": null,
+      "conference_series_id": null,
+      "updated_at": "2026-05-28T23:26:50.461096+00:00"
     },
     {
       "slug": "apg-spring-conference-2028",
@@ -5987,7 +6277,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": null
+      "expected_attendees": null,
+      "conference_series_id": null,
+      "updated_at": "2026-05-28T23:26:50.461096+00:00"
     },
     {
       "slug": "ahip-2028",
@@ -6016,7 +6308,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": null
+      "expected_attendees": null,
+      "conference_series_id": null,
+      "updated_at": "2026-05-28T23:26:50.461096+00:00"
     },
     {
       "slug": "hfma-annual-conference-2028",
@@ -6045,7 +6339,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": null
+      "expected_attendees": null,
+      "conference_series_id": null,
+      "updated_at": "2026-05-28T23:26:50.461096+00:00"
     },
     {
       "slug": "hfma-annual-conference-2029",
@@ -6074,7 +6370,9 @@
       "ceu_offered": false,
       "ceu_info": null,
       "keynote_speakers": null,
-      "expected_attendees": null
+      "expected_attendees": null,
+      "conference_series_id": null,
+      "updated_at": "2026-05-28T23:26:50.461096+00:00"
     }
   ]
 }

@@ -11,11 +11,30 @@ export type ListParams = {
   ceu?: boolean;
   memberOnly?: boolean;
   type?: string;
-  upcoming?: boolean;
+  upcoming?: boolean; // retained for compatibility; upcoming is now the default
+  includePast?: boolean; // opt back into the full archive
   sort?: string; // field name, default start_date
   limit?: number;
   offset?: number;
 };
+
+export type ListResult = { rows: Conference[]; total: number };
+
+/** A conference is "upcoming" if its last day is today or later (keeps in-progress multi-day events). */
+export function isUpcoming(c: Conference, todayDate: string): boolean {
+  const lastDay = c.end_date || c.start_date;
+  return Boolean(lastDay && lastDay >= todayDate);
+}
+
+/** Coverage summary surfaced in list meta so an agent can see the directory isn't stale. */
+export function coverageWindow(rows: Conference[], todayDate: string) {
+  const upcoming = rows.filter((c) => isUpcoming(c, todayDate));
+  const next = upcoming
+    .map((c) => c.start_date)
+    .filter((d): d is string => Boolean(d))
+    .sort()[0];
+  return { total_live: rows.length, upcoming_count: upcoming.length, next_event_date: next ?? null };
+}
 
 const lc = (s: unknown): string => (typeof s === "string" ? s.toLowerCase() : "");
 
@@ -30,7 +49,12 @@ function matchesFocus(c: Conference, focus: string): boolean {
   return (c.focus_themes ?? []).some((t) => lc(t).includes(f));
 }
 
-export function filterList(rows: Conference[], p: ListParams, todayDate: string): Conference[] {
+export function filterList(rows: Conference[], p: ListParams, todayDate: string): ListResult {
+  // Upcoming is the DEFAULT (the directory must not present as stale on first
+  // contact). An explicit --from/--to range or --include-past opts out.
+  const hasExplicitRange = p.from != null || p.to != null;
+  const applyUpcoming = p.includePast !== true && !hasExplicitRange;
+
   let out = rows.filter((c) => {
     if (p.focus && !matchesFocus(c, p.focus)) return false;
     if (p.state && lc(c.location_state) !== p.state.toLowerCase()) return false;
@@ -40,7 +64,7 @@ export function filterList(rows: Conference[], p: ListParams, todayDate: string)
     if (p.hybrid && c.is_hybrid !== true) return false;
     if (p.ceu && c.ceu_offered !== true) return false;
     if (p.memberOnly && c.is_member_only !== true) return false;
-    if (p.upcoming && !(c.start_date && c.start_date >= todayDate)) return false;
+    if (applyUpcoming && !isUpcoming(c, todayDate)) return false;
     if (p.from && !(c.start_date && c.start_date >= p.from)) return false;
     if (p.to && !(c.start_date && c.start_date <= p.to)) return false;
     return true;
@@ -56,9 +80,10 @@ export function filterList(rows: Conference[], p: ListParams, todayDate: string)
     return String(av) < String(bv) ? -1 : String(av) > String(bv) ? 1 : 0;
   });
 
+  const total = out.length;
   const offset = p.offset ?? 0;
   const end = p.limit != null ? offset + p.limit : undefined;
-  return out.slice(offset, end);
+  return { rows: out.slice(offset, end), total };
 }
 
 export function getBySlug(rows: Conference[], slug: string): Conference | undefined {

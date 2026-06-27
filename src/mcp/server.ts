@@ -9,6 +9,7 @@ import {
   search,
   near,
   stats,
+  coverageWindow,
   todayIsoDate,
   type StatBy,
 } from "../core/query.js";
@@ -43,14 +44,14 @@ server.registerTool(
       focus: z.string().optional().describe("Focus area or theme, e.g. Medicare, Medicaid, Quality"),
       state: z.string().optional().describe("Two-letter US state, e.g. TX"),
       city: z.string().optional(),
-      from: z.string().optional().describe("Start date >= YYYY-MM-DD"),
+      from: z.string().optional().describe("Start date >= YYYY-MM-DD (an explicit range includes past events)"),
       to: z.string().optional().describe("Start date <= YYYY-MM-DD"),
       virtual: z.boolean().optional(),
       hybrid: z.boolean().optional(),
       ceu: z.boolean().optional().describe("Only events offering CEU/CME credit"),
       member_only: z.boolean().optional(),
       type: z.string().optional().describe("conference|summit|forum|expo|webinar"),
-      upcoming: z.boolean().optional().describe("Only events starting today or later"),
+      include_past: z.boolean().optional().describe("Include past events. Default is UPCOMING-only."),
       limit: z.number().int().positive().optional(),
       offset: z.number().int().nonnegative().optional(),
     },
@@ -58,7 +59,8 @@ server.registerTool(
   },
   async (a) => {
     const { source, synced_at, rows } = await resolveSource(MODE, nowIso());
-    const results = filterList(
+    const today = todayIsoDate(nowIso());
+    const { rows: results, total } = filterList(
       rows,
       {
         focus: a.focus,
@@ -71,14 +73,30 @@ server.registerTool(
         ceu: a.ceu,
         memberOnly: a.member_only,
         type: a.type,
-        upcoming: a.upcoming,
+        includePast: a.include_past,
         limit: a.limit,
         offset: a.offset,
       },
-      todayIsoDate(nowIso()),
+      today,
     );
-    capture(telemetry, "mcp_tool_call", { tool: "list_conferences", result_count: results.length });
-    return jsonContent(envelope(results, { source, synced_at, data_source: MODE }));
+    capture(telemetry, "mcp_tool_call", {
+      tool: "list_conferences",
+      result_count: results.length,
+      focus: a.focus ?? null,
+      state: a.state ?? null,
+      include_past: a.include_past || undefined,
+    });
+    return jsonContent(
+      envelope(results, {
+        source,
+        synced_at,
+        data_source: MODE,
+        total,
+        offset: a.offset,
+        limit: a.limit,
+        coverage_window: coverageWindow(rows, today),
+      }),
+    );
   },
 );
 

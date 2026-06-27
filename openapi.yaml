@@ -18,14 +18,14 @@ paths:
       operationId: listConferences
       summary: List live healthcare conferences
       description: >-
-        Always send select=slug,name,host_org,host_org_abbrev,start_date,end_date,dates_display,location_city,location_state,location_venue,is_virtual,is_hybrid,nearest_airport,focus_area,focus_themes,conference_type,short_description,long_description,website_url,registration_url,attendance_pricing,early_bird_deadline,is_member_only,ceu_offered,ceu_info,keynote_speakers,expected_attendees and status=eq.live. Filter with PostgREST
+        Always send select=slug,name,host_org,host_org_abbrev,start_date,end_date,dates_display,location_city,location_state,location_venue,is_virtual,is_hybrid,nearest_airport,focus_area,focus_themes,conference_type,short_description,long_description,website_url,registration_url,attendance_pricing,early_bird_deadline,is_member_only,ceu_offered,ceu_info,keynote_speakers,expected_attendees,conference_series_id,updated_at and status=eq.live. Filter with PostgREST
         operators, e.g. focus_area=ilike.*Medicare*, location_state=eq.TX,
         start_date=gte.2026-01-01, order=start_date.asc, limit=20.
       parameters:
         - name: select
           in: query
           required: true
-          schema: { type: string, default: "slug,name,host_org,host_org_abbrev,start_date,end_date,dates_display,location_city,location_state,location_venue,is_virtual,is_hybrid,nearest_airport,focus_area,focus_themes,conference_type,short_description,long_description,website_url,registration_url,attendance_pricing,early_bird_deadline,is_member_only,ceu_offered,ceu_info,keynote_speakers,expected_attendees" }
+          schema: { type: string, default: "slug,name,host_org,host_org_abbrev,start_date,end_date,dates_display,location_city,location_state,location_venue,is_virtual,is_hybrid,nearest_airport,focus_area,focus_themes,conference_type,short_description,long_description,website_url,registration_url,attendance_pricing,early_bird_deadline,is_member_only,ceu_offered,ceu_info,keynote_speakers,expected_attendees,conference_series_id,updated_at" }
         - name: status
           in: query
           required: true
@@ -144,5 +144,11 @@ components:
           items:
             type: string
         expected_attendees:
+          type: string
+          nullable: true
+        conference_series_id:
+          type: string
+          nullable: true
+        updated_at:
           type: string
           nullable: true

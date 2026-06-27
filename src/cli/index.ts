@@ -82,8 +82,11 @@ async function run(argv: string[]): Promise<number> {
     const match = matchIntent(intent);
     capture(telemetry, "cli_which", {
       intent_text: intent,
-      matched: Boolean(match),
+      // A generic search fallback is NOT a confident structured mapping — the
+      // gap-loop treats these as misses worth growing the intent table for.
+      matched: Boolean(match) && !match?.fallback,
       mapped_command: match?.command ?? null,
+      fallback: match?.fallback || undefined,
     });
     if (!match) {
       process.stdout.write(JSON.stringify({ match: null }, null, 2) + "\n");

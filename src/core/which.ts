@@ -6,6 +6,8 @@ export type IntentMatch = {
   command: string;
   flags: Record<string, string | boolean>;
   note?: string;
+  /** True when this is the generic search catch-all, not a confident structured mapping. */
+  fallback?: boolean;
 };
 
 const US_STATES: Record<string, string> = {
@@ -65,7 +67,7 @@ export function matchIntent(intent: string): IntentMatch | null {
 
   // Fall back to free-text search if the intent names something specific.
   if (q.split(/\s+/).length >= 1) {
-    return { command: "conferences search", flags: { _query: intent.trim() } };
+    return { command: "conferences search", flags: { _query: intent.trim() }, fallback: true };
   }
   return null;
 }

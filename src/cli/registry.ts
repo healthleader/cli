@@ -36,7 +36,7 @@ const LIST_FILTERS: FlagSpec[] = [
   { name: "ceu", type: "boolean", usage: "CEU/CME-offering events only." },
   { name: "member-only", type: "boolean", usage: "Member-only events only." },
   { name: "type", type: "string", usage: "conference|summit|forum|expo|webinar." },
-  { name: "upcoming", type: "boolean", usage: "Only events starting today or later." },
+  { name: "include-past", type: "boolean", usage: "Include past events. Default is UPCOMING-only." },
   { name: "sort", type: "string", usage: "Sort field (default start_date)." },
   { name: "limit", type: "number", usage: "Max rows." },
   { name: "offset", type: "number", usage: "Pagination offset." },
@@ -45,10 +45,10 @@ const LIST_FILTERS: FlagSpec[] = [
 export const COMMANDS: CommandSpec[] = [
   {
     path: "conferences list",
-    summary: "List healthcare conferences with filters.",
+    summary: "List upcoming healthcare conferences (use --include-past for the archive).",
     flags: [...LIST_FILTERS, ...OUTPUT_FLAGS],
     readOnly: true,
-    example: 'healthleader conferences list --upcoming --focus "Medicare" --agent',
+    example: 'healthleader conferences list --focus "Medicare" --agent',
   },
   {
     path: "conferences get",

@@ -36,6 +36,8 @@ export const PUBLIC_FIELDS = [
   "ceu_info",
   "keynote_speakers",
   "expected_attendees",
+  "conference_series_id",
+  "updated_at",
 ] as const;
 
 export type PublicField = (typeof PUBLIC_FIELDS)[number];
@@ -69,6 +71,8 @@ export type Conference = {
   ceu_info: Record<string, unknown> | null;
   keynote_speakers: string[] | null;
   expected_attendees: string | null;
+  conference_series_id: string | null;
+  updated_at: string | null;
 };
 
 const PUBLIC_FIELD_SET: ReadonlySet<string> = new Set(PUBLIC_FIELDS);
